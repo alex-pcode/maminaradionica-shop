@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Komplet za krevetac · Mamina radionica mašte</title>
+<meta name="description" content="Ogradica, gnezdo, jastuk za bebu, ćebence i čaršav u istom dezenu. Izaberite dezen, dodajte pletenicu i pošaljite porudžbinu u DM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf5ee; --paper:#fffdf9; --ink:#3b2922; --muted:#7c6a60; --line:#eadfd3;
+  --rose:#d9647d; --rose-deep:#b3455e; --rose-soft:#fbe6ea;
+  --terra:#ad6d55; --terra-soft:#f3e4da;
+  --leaf:#5a9e3a; --leaf-deep:#3f7527; --sage:#e9f0df;
+  --radius:26px; --shadow:0 18px 40px -22px rgba(59,41,34,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Figtree",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,textarea{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.1}
+.script{font-family:"Dancing Script",cursive;font-weight:700;color:var(--rose-deep);font-size:1.12em;line-height:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--leaf-deep)}
+.eyebrow::before{content:"";width:22px;border-top:2px dashed currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;border:2px solid var(--ink);cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.btn-rose{background:var(--rose-deep);border-color:var(--rose-deep);color:#fff}
+.btn-rose:hover{background:var(--ink);border-color:var(--ink);transform:translateY(-2px)}
+.btn-ghost{background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,245,238,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-family:"Young Serif",serif;font-size:21px;line-height:1.05}
+.logo img{width:50px;height:50px;border-radius:50%;background:#fff;object-fit:cover}
+.logo small{display:block;font-family:"Dancing Script",cursive;font-size:17px;color:var(--rose-deep)}
+nav.main{display:flex;gap:28px;font-weight:700;font-size:15px}
+nav.main a{position:relative;padding:4px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;border-top:2px dashed var(--rose);transition:width .2s}
+nav.main a:hover::after,nav.main a.on::after{width:100%}
+.icons{display:flex;gap:10px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);background:#fff;cursor:pointer;position:relative}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:2}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--rose-deep);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center;transition:transform .2s}
+.badge.bump{transform:scale(1.35)}
+.menu-btn{display:none}
+.mobile-nav{display:none}
+
+.crumbs{display:flex;gap:10px;font-size:13px;color:var(--muted);font-weight:700;padding:22px 0;flex-wrap:wrap}
+.crumbs a:hover{color:var(--rose-deep)}
+
+.product{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:start;padding-bottom:80px}
+.gallery{position:sticky;top:96px;display:grid;grid-template-columns:78px 1fr;gap:14px;min-width:0}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumbs button{border:2px solid transparent;border-radius:14px;overflow:hidden;padding:0;cursor:pointer;aspect-ratio:1;background:#fff}
+.thumbs button.on{border-color:var(--rose-deep)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.stage{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:#fff;box-shadow:var(--shadow)}
+.stage img{width:100%;height:100%;object-fit:cover;transition:opacity .16s}
+.stage::after{content:"";position:absolute;inset:12px;border:2px dashed rgba(255,255,255,.75);border-radius:16px;pointer-events:none}
+.tag{position:absolute;top:22px;left:22px;background:var(--rose-deep);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 11px;border-radius:999px;z-index:2}
+.tag:empty{display:none}
+
+.info{min-width:0}
+.info h1{font-size:clamp(38px,4.4vw,58px);margin:10px 0 10px}
+.rating{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted);font-weight:700}
+.rating .hearts{color:var(--rose-deep);letter-spacing:2px}
+.pricebox{display:flex;align-items:baseline;gap:12px;margin:20px 0 4px;flex-wrap:wrap}
+.pricebox .now{font-family:"Young Serif",serif;font-size:38px}
+.pricebox .now.sale{color:var(--rose-deep)}
+.pricebox s{color:var(--muted);font-size:18px}
+.pricebox .note{font-size:13px;font-weight:700;color:var(--muted);background:var(--terra-soft);border-radius:999px;padding:3px 11px}
+.pricebox .note.real{background:var(--sage);color:var(--leaf-deep)}
+.salenote{font-size:13.5px;color:var(--rose-deep);font-weight:700;min-height:1px}
+.intro{color:var(--muted);font-size:16.5px;margin:14px 0 4px;max-width:54ch}
+
+.opt{margin-top:28px}
+.opt-head{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:15px;margin-bottom:12px;gap:12px;flex-wrap:wrap}
+.opt-head .val{font-weight:700;color:var(--rose-deep);font-size:14px}
+.sets{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.setb{position:relative;border:0;padding:0;border-radius:16px;overflow:hidden;aspect-ratio:1;cursor:pointer;background:#fff;box-shadow:0 0 0 1.5px var(--line);transition:transform .12s,box-shadow .12s}
+.setb img{width:100%;height:100%;object-fit:cover}
+.setb:hover{transform:translateY(-2px)}
+.setb.on{box-shadow:0 0 0 3px var(--rose-deep)}
+.setb .dot{position:absolute;bottom:5px;right:5px;width:10px;height:10px;border-radius:50%;background:var(--leaf);border:2px solid #fff}
+.legend{font-size:12.5px;color:var(--muted);margin-top:8px;display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:50%;background:var(--leaf);display:inline-block}
+
+.contents{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.item{display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:8px 10px;font-size:14px;font-weight:700;min-width:0}
+.item img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 40px}
+.item span{min-width:0}
+.item small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+
+.addons{display:grid;gap:10px}
+.addon{display:flex;gap:14px;align-items:center;border:1.5px solid var(--line);border-radius:18px;background:#fff;padding:10px 16px 10px 10px;cursor:pointer;transition:border-color .15s,background .15s}
+.addon img{width:54px;height:54px;border-radius:50%;object-fit:cover;flex:0 0 54px}
+.addon .t{flex:1;min-width:0}
+.addon .t b{display:block;font-size:15px}
+.addon .t small{color:var(--muted);font-size:13px}
+.addon .p{font-weight:800;font-size:14px;text-align:right}
+.addon .p small{display:block;font-weight:600;color:var(--muted);font-size:11.5px}
+.addon input{width:20px;height:20px;accent-color:var(--rose-deep);flex:0 0 20px}
+.addon:has(input:checked){border-color:var(--ink);background:var(--rose-soft)}
+.addon.locked{cursor:default;background:var(--sage);border-color:transparent}
+
+textarea{width:100%;border:1.5px solid var(--line);border-radius:18px;background:#fff;padding:14px 16px;min-height:84px;resize:vertical;outline:0;font-size:15px}
+textarea:focus{border-color:var(--rose)}
+
+.buy{display:flex;gap:12px;margin-top:28px}
+.buy .btn{flex:1}
+.dm{width:100%;margin-top:10px}
+.dm-note{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
+
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.perk{background:#fff;border:2px dashed var(--line);border-radius:16px;padding:14px 8px;text-align:center;font-size:13px;font-weight:800}
+.perk span{display:block;font-size:22px;margin-bottom:4px}
+
+.acc{margin-top:28px;border-top:1.5px solid var(--line)}
+.acc details{border-bottom:1.5px solid var(--line);padding:18px 0;overflow:hidden}
+.acc summary{cursor:pointer;list-style:none;font-family:"Young Serif",serif;font-size:20px;display:flex;justify-content:space-between;gap:12px}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-family:"Figtree";font-weight:800;font-size:22px;color:var(--rose-deep);transition:transform .2s}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc .inner{color:var(--muted);margin-top:10px;font-size:15px}
+.acc ul{padding-left:18px;display:grid;gap:6px}
+
+section.block{padding:90px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(32px,4vw,50px);margin-top:10px}
+
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:22px}
+.rev .bubble{background:#f3ece6;border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:15px;line-height:1.55}
+.rev .who{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13px;color:var(--muted);font-weight:600}
+.rev .who i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--rose) 0 40%,var(--terra) 41%)}
+.rev .who b{color:var(--ink)}
+
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.strip a{border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--shadow);display:block}
+.strip img{width:100%;aspect-ratio:1;object-fit:cover}
+.strip span{display:block;padding:12px 14px;font-weight:800;font-size:14px}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,calc(100% + 40px));visibility:hidden;background:var(--ink);color:#fff;padding:14px 22px;border-radius:999px;font-size:14px;font-weight:700;z-index:90;transition:transform .3s;box-shadow:var(--shadow);max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0);visibility:visible}
+.sticky-buy{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:12px 16px;display:none;align-items:center;gap:12px;z-index:80;box-shadow:0 -10px 24px -18px rgba(0,0,0,.4)}
+.sticky-buy .t{flex:1;min-width:0}
+.sticky-buy .t small{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-buy .t b{font-size:17px}
+.sticky-buy .btn{padding:12px 20px}
+
+footer{background:#3b2922;color:#e3d4c8;padding:60px 0 28px;margin-top:40px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:#fff;font-family:"Young Serif",serif;font-weight:400;font-size:19px;margin-bottom:14px}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:#f3a9b8}
+footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .revs{grid-template-columns:1fr 1fr}
+  .contents{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}
+  .mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}
+  .mobile-nav a:last-child{border-bottom:0}
+  .product{grid-template-columns:1fr;gap:30px}
+  .gallery{position:static;grid-template-columns:1fr}
+  .thumbs{flex-direction:row;order:2;overflow-x:auto}
+  .thumbs button{flex:0 0 66px}
+  .revs{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+  .sticky-buy.show{display:flex}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .logo{font-size:17px}
+  .logo small{font-size:15px}
+  .logo img{width:42px;height:42px}
+  .ig-btn{display:none}
+  .sets{grid-template-columns:repeat(5,1fr);gap:6px}
+  .setb{border-radius:12px}
+  .perk{font-size:12px;padding:12px 4px}
+  section.block{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Mamina radionica mašte logo"><span>Mamina radionica<small>mašte</small></span></a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a href="index.html#kompleti">Kompleti</a>
+      <a class="on" href="komplet-za-krevetac.html">Složite komplet</a>
+      <a href="index.html#nega">Nega</a>
+      <a href="index.html#utisci">Utisci</a>
+      <a href="index.html#pitanja">Pitanja</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn ig-btn" href="https://www.instagram.com/maminaa_radionica_maste/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cartCount">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <nav class="crumbs" aria-label="Putanja"><a href="index.html">Početna</a><span>/</span><a href="index.html#kompleti">Kompleti</a><span>/</span><span id="crumbName">Komplet za krevetac</span></nav>
+
+  <div class="product">
+    <div class="gallery">
+      <div class="thumbs" id="thumbs"></div>
+      <div class="stage"><span class="tag" id="stageTag"></span><img id="stageImg" src="img/Da-e3xsjSBl.jpg" alt="Komplet za krevetac"></div>
+    </div>
+
+    <div class="info">
+      <span class="eyebrow">Komplet za krevetac · ručno rađeno</span>
+      <h1>Komplet <span class="script" id="setName">Mede u sivoj</span></h1>
+      <div class="rating"><span class="hearts">♥♥♥♥♥</span><a href="#utisci" style="text-decoration:underline;text-underline-offset:3px">Pročitajte poruke mama</a></div>
+
+      <div class="pricebox"><span class="now" id="price">8.800 RSD</span><s id="was" hidden></s><span class="note" id="priceNote">cena kompleta</span></div>
+      <p class="salenote" id="saleNote"></p>
+      <p class="intro" id="setIntro"></p>
+
+      <div class="opt">
+        <div class="opt-head">1. Dezen <span class="val" id="setVal"></span></div>
+        <div class="sets" id="sets"></div>
+        <p class="legend"><i></i> cena objavljena · ostali: okvirna cena, potvrđujemo u poruci</p>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">2. Komplet čine</div>
+        <div class="contents" id="contents"></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">3. Dodaci</div>
+        <div class="addons" id="addons"></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head"><label for="note">4. Napomena</label></div>
+        <textarea id="note" placeholder="Npr. dimenzije krevetca, datum kada vam treba, pitanje o boji…"></textarea>
+      </div>
+
+      <div class="buy">
+        <button class="btn btn-rose" id="addBtn" type="button" onclick="addToCart()">Dodaj u korpu</button>
+      </div>
+      <button class="btn btn-ghost dm" type="button" onclick="sendDM()">Pošalji porudžbinu u DM 💌</button>
+      <p class="dm-note">Kopiramo vaš komplet, a vi ga samo nalepite u poruku na Instagramu.</p>
+
+      <div class="perks">
+        <div class="perk"><span>🧵</span>Ručno rađeno</div>
+        <div class="perk"><span>🗓️</span>Izrada 5–7 dana</div>
+        <div class="perk"><span>📦</span>Pošta Srbije</div>
+      </div>
+
+      <div class="acc">
+        <details open><summary>Opis</summary><div class="inner"><p id="setDesc"></p></div></details>
+        <details><summary>Materijal i mere</summary><div class="inner"><ul id="setMat"></ul></div></details>
+        <details><summary>Nega</summary><div class="inner"><ul>
+          <li>Prati na 30–40 °C, blagim deterdžentom, bez izbeljivača i jakih hemikalija</li>
+          <li>Prati odvojeno ili sa sličnim bojama, ne pretrpavati mašinu</li>
+          <li>Sušiti prirodno ili u sušilici na niskoj temperaturi</li>
+          <li>Preći ovlaš parom pegle; jastučiće oblikovati dok su još blago vlažni</li>
+          <li>Pre prve upotrebe preporučuje se pranje</li>
+        </ul></div></details>
+        <details><summary>Izrada i dostava</summary><div class="inner"><p>Rok izrade je 5–7 dana. Komplet šaljemo Postom Srbije. Cenu dostave i način plaćanja potvrđujemo u poruci, kada dogovorimo detalje.</p></div></details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block" id="utisci" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Utisci</span><h2>Kad komplet <span class="script">stigne</span></h2></div></div>
+    <div class="revs">
+      <div class="rev"><div class="bubble">Jaaoo, ja nemam zaista komentar koliko je divno, upravo sam preuzela i ne mogu da docekam da namontiram na krevetac! PRELEPO JE ❤️❤️❤️</div><div class="who"><i></i><span><b>Poruka kupca</b> · komplet</span></div></div>
+      <div class="rev"><div class="bubble">Pozdrav draga, sestra je odusevljena za ogradicu, a gnezdo je bilo iznenadjenje, pa su se jos vise obradovali 🥰</div><div class="who"><i></i><span><b>Poruka kupca</b> · ogradica i gnezdo</span></div></div>
+      <div class="rev"><div class="bubble">Preuzela sam. Bas je sve lepoo i vidi se da je puno truda ulozeno. Definitivno cu Vas svima preporucivati ❤️❤️</div><div class="who"><i></i><span><b>Poruka kupca</b></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Iz radionice</span><h2>Još kompleta</h2></div><a class="btn btn-ghost" href="https://www.instagram.com/maminaa_radionica_maste/" target="_blank" rel="noopener">Još na Instagramu</a></div>
+    <div class="strip" id="strip"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html" style="color:#fff"><img src="img/logo.jpg" alt=""><span>Mamina radionica<small style="color:#f3a9b8">mašte</small></span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:34ch">Sve što treba jednoj bebi: ogradice, gnezda, posteljina, jastuci za dojenje i još svašta nešto. Slatke snove želi vam Mamina radionica mašte ☁️</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="komplet-za-krevetac.html">Komplet za krevetac</a></li><li><a href="index.html#akcija">Akcija: Mede</a></li><li><a href="index.html#nega">Nega</a></li><li><a href="index.html#pitanja">Pitanja</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/maminaa_radionica_maste/" target="_blank" rel="noopener">Instagram @maminaa_radionica_maste</a></li><li><a href="https://ig.me/m/maminaa_radionica_maste" target="_blank" rel="noopener">Poručivanje u DM 💌</a></li><li>Slanje Postom Srbije</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Mamina radionica mašte</span><span>Prikazane cene su okvirne tamo gde je tako označeno · Srbija</span></div>
+  </div>
+</footer>
+
+<div class="sticky-buy" id="stickyBuy">
+  <div class="t"><small id="stickyName">Komplet Mede u sivoj</small><b id="stickyPrice">8.800 RSD</b></div>
+  <button class="btn btn-rose" type="button" onclick="addToCart()">Dodaj u korpu</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* pletenica: 'incl' = already in the set; {price, real} = add-on (real:false → okvirno) */
+const SETS = [
+  {id:'mede-sivi', name:'Mede u sivoj', price:8800, real:true, tag:'Akcija', organic:true,
+   pletenica:{price:2000, real:true}, deal:{price:9800, text:'Akcija do kraja oktobra: komplet sa pletenicom 9.800 RSD. Važi samo za ovaj komplet, količine su ograničene.'},
+   intro:'Jedan od naših najprodavanijih dezena, od sada u novoj nežno sivoj kombinaciji koja savršeno pristaje ovom dezenu 🥹',
+   desc:'Mede na oblačićima i nežno sivi detalji. 🍯 Da se istopite od nežnosti. Uz komplet možete dodati sivu pletenicu, a sa njom je komplet sada na akciji.',
+   imgs:['img/Da-e3xsjSBl.jpg','img/Da-e3xsjSBl_02.jpg','img/Da-e3xsjSBl_04.jpg','img/Da-e3xsjSBl_05.jpg','img/Da-e0zsjdGX_02.jpg','img/akcija-mede.jpg']},
+  {id:'tufne-roze', name:'Tufne roze sa mašnom', price:9600, real:true, organic:true,
+   pletenica:{price:2000, real:true},
+   intro:'Savršenstvo ✨ Tufnice na belom, velika roze mašna i karnerići.',
+   desc:'Nežnost za vašu bebu: ogradica sa velikom mašnom, gnezdo sa karnerićima i roze detalji. Pletenica se doplaćuje 2.000 dinara.',
+   imgs:['img/DbGgB6bCJIi.jpg','img/DbGgB6bCJIi_03.jpg','img/DbGgB6bCJIi_04.jpg','img/DbGgB6bCJIi_06.jpg','img/DbGgjDcICAe.jpg','img/DbGgpZzopkT.jpg']},
+  {id:'zlatne-tufne', name:'Zlatne tufne krem', price:9800, real:true, tag:'Sa pletenicom', organic:true,
+   pletenica:'incl',
+   intro:'Divna kombinacija gliter zlatnih tufnica i nežnog krem pamuka 🤎',
+   desc:'Krem i bež tonovi sa zlatnim tufnicama. U ovom kompletu je i pletenica od 120 cm.',
+   imgs:['img/DbNFky7CNQK.jpg','img/DbNFky7CNQK_02.jpg','img/DbNFky7CNQK_03.jpg']},
+  {id:'obozavane-mede', name:'Obožavane mede', price:9400, real:true, organic:true,
+   pletenica:{price:2000, real:false},
+   intro:'🐻 Obožavane mede, u krem tonovima.',
+   desc:'Mede na oblačićima sa zvezdicama i mesecom, uz krem detalje.',
+   imgs:['img/DageRMaNpzT.jpg']},
+  {id:'tirkiz', name:'Tufne tirkiz sa mašnom', price:9600, real:true, cover:'prekrivac',
+   pletenica:{price:2000, real:false},
+   intro:'Zlatne tufne na belom i tirkizni karnerići sa velikom mašnom.',
+   desc:'U ovom kompletu umesto ćebenceta dolazi prekrivač. Ogradica sa velikom tirkiznom mašnom i gnezdo sa karnerićima.',
+   imgs:['img/Dak2vzcjYEc.jpg','img/Dak2vzcjYEc_04.jpg','img/Dak2vzcjYEc_05.jpg','img/Dak21J9t8jM.jpg','img/Dak2yXmjYGj.jpg']},
+  {id:'roze-oblak', name:'Roze tufne sa oblakom', price:9600, real:false,
+   pletenica:{price:2000, real:false},
+   intro:'✨🌸 Roze i bele tufne, jastučić u obliku oblaka i roze pletenica.',
+   desc:'Komplet u roze tonovima sa tufnicama. Na slikama je sa roze pletenicom i jastučićem oblakom; cenu i sastav potvrđujemo u poruci.',
+   imgs:['img/DbNEr_MCIbo.jpg','img/DbNEr_MCIbo_03.jpg','img/DbNEzgzCJJW.jpg','img/DbNEzgzCJJW_04.jpg','img/DbNE28kIifC.jpg']},
+  {id:'pcelice', name:'Pčelice i bubamare', price:9600, real:false,
+   pletenica:{price:2000, real:false},
+   intro:'🐞🐝🐞 Veseo dezen sa pčelicama, bubamarama i cvećem.',
+   desc:'Dezen sa pčelicama i bubamarama i roze detaljima na gnezdu i ogradici. Cenu potvrđujemo u poruci.',
+   imgs:['img/DZVvPfMDZiv.jpg','img/DZVvPfMDZiv_02.jpg','img/DZVvPfMDZiv_05.jpg','img/Da-fkKIjY3K.jpg','img/Da-fljWNEos.jpg']},
+  {id:'mede-piloti', name:'Mede piloti', price:9600, real:false,
+   pletenica:{price:2000, real:false},
+   intro:'🐻 Mede sa padobranima, avionima i dugama, uz bež detalje.',
+   desc:'Razigran dezen sa medama pilotima i bež gnezdom. Cenu potvrđujemo u poruci.',
+   imgs:['img/DYiNW0vjdK3.jpg','img/DYiNW0vjdK3_03.jpg','img/DYiNW0vjdK3_05.jpg','img/DYiNjonDdIm.jpg','img/DYiNjonDdIm_05.jpg']},
+  {id:'sivo-bez', name:'Sivo-bež mašnice', price:9600, real:false,
+   pletenica:{price:2000, real:false},
+   intro:'🤎🩶🤍 Jednobojni komplet u sivoj i bež, sa mašnicama.',
+   desc:'Mirni sivi i bež tonovi, mašnice na ogradici i pletenica u dve boje. Cenu i sastav potvrđujemo u poruci.',
+   imgs:['img/DcVvw1ajQbu.jpg','img/DcVvw1ajQbu_04.jpg','img/DcVvw1ajQbu_06.jpg','img/DcVwAl5Nfj4.jpg']},
+];
+const PARTS = {
+  ogradica:['Ogradica','img/delovi/ogradica.jpg',''],
+  jastuk:['Jastuk za bebu','img/delovi/jastuk.jpg',''],
+  gnezdo:['Gnezdo','img/delovi/gnezdo.jpg','ležište 80 cm'],
+  cebence:['Ćebence','img/delovi/cebence.jpg',''],
+  prekrivac:['Prekrivač','img/delovi/cebence.jpg','umesto ćebenceta'],
+  carsaf:['Čaršav','img/delovi/carsaf.jpg','lastiš po želji'],
+  pletenica:['Pletenica','img/delovi/pletenica.jpg','120 cm, u kompletu'],
+};
+const LASTIS = 200;
+const fmt = n => n.toLocaleString('sr-RS').replace(/,/g,'.') + ' RSD';
+const $ = id => document.getElementById(id);
+const q = new URLSearchParams(location.search).get('k');
+const state = {i: Math.max(0, SETS.findIndex(s => s.id === q)), cart:0};
+const cur = () => SETS[state.i];
+function setUrl(id){ try{ history.replaceState(null,'','?k='+id); }catch(e){} }
+
+function renderSets(){
+  $('sets').innerHTML = SETS.map((s,i)=>`<button type="button" class="setb ${i===state.i?'on':''}" data-i="${i}" title="${s.name}" aria-label="${s.name}" aria-pressed="${i===state.i}"><img src="${s.imgs[0]}" alt="">${s.real?'<span class="dot"></span>':''}</button>`).join('');
+  $('sets').querySelectorAll('button').forEach(b => b.onclick = () => { state.i = +b.dataset.i; setUrl(cur().id); renderAll(); });
+}
+function renderThumbs(){
+  const s = cur();
+  $('stageImg').src = s.imgs[0]; $('stageImg').alt = 'Komplet ' + s.name;
+  $('thumbs').innerHTML = s.imgs.map((src,k) => `<button type="button" class="${k===0?'on':''}" data-src="${src}" aria-label="Prikaži sliku"><img src="${src}" alt=""></button>`).join('');
+  $('thumbs').querySelectorAll('button').forEach(b => b.onclick = () => showImg(b.dataset.src));
+}
+function showImg(src){
+  const el = $('stageImg'); el.style.opacity = 0;
+  setTimeout(()=>{ el.src = src; el.style.opacity = 1; }, 160);
+  $('thumbs').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.src===src));
+}
+function renderContents(){
+  const s = cur();
+  const keys = ['ogradica','jastuk','gnezdo', s.cover==='prekrivac'?'prekrivac':'cebence','carsaf'];
+  if (s.pletenica === 'incl') keys.push('pletenica');
+  $('contents').innerHTML = keys.map(k => { const [n,img,sm] = PARTS[k]; return `<div class="item"><img src="${img}" alt=""><span>${n}${sm?`<small>${sm}</small>`:''}</span></div>`; }).join('');
+}
+function renderAddons(){
+  const s = cur(), p = s.pletenica;
+  let html = '';
+  if (p === 'incl') html += `<div class="addon locked"><img src="img/delovi/pletenica.jpg" alt=""><span class="t"><b>Pletenica 120 cm</b><small>već je u ovom kompletu</small></span><span class="p">✓</span></div>`;
+  else html += `<label class="addon"><img src="img/delovi/pletenica.jpg" alt=""><span class="t"><b>Pletenica</b><small>${s.deal ? 'sa njom je komplet na akciji' : 'pletena ogradica oko krevetca'}</small></span><span class="p">+${fmt(p.price)}${p.real?'':'<small>okvirno</small>'}</span><input type="checkbox" id="optPlet"${s.deal?' checked':''}></label>`;
+  html += `<label class="addon"><img src="img/delovi/carsaf.jpg" alt=""><span class="t"><b>Lastiš na čaršavu</b><small>čaršav sa lastišem</small></span><span class="p">+${fmt(LASTIS)}</span><input type="checkbox" id="optLastis"></label>`;
+  $('addons').innerHTML = html;
+  $('addons').querySelectorAll('input').forEach(i => i.onchange = update);
+}
+function renderText(){
+  const s = cur();
+  $('setName').textContent = s.name; $('crumbName').textContent = 'Komplet ' + s.name; $('setVal').textContent = s.name;
+  $('stageTag').textContent = s.tag || '';
+  $('setIntro').textContent = s.intro; $('setDesc').textContent = s.desc;
+  const mat = [];
+  mat.push(s.organic ? '100% organski pamuk' : 'Materijal potvrđujemo u poruci');
+  mat.push('Gnezdo: dužina ležišta 80 cm');
+  if (s.pletenica === 'incl') mat.push('Pletenica: 120 cm');
+  mat.push('Mere ogradice i čaršava prema vašem krevecu: napišite ih u napomeni');
+  $('setMat').innerHTML = mat.map(m => `<li>${m}</li>`).join('');
+}
+const plet = () => { if (cur().pletenica === 'incl') return false; const e = $('optPlet'); return !!(e && e.checked); };
+const lastis = () => $('optLastis').checked;
+function calc(){
+  const s = cur();
+  let full = s.price + (plet() ? s.pletenica.price : 0);
+  let now = (s.deal && plet()) ? s.deal.price : full;
+  const add = lastis() ? LASTIS : 0;
+  const real = s.real && (!plet() || s.pletenica.real);
+  return {now: now + add, was: now !== full ? full + add : 0, real};
+}
+function update(){
+  const s = cur(), c = calc();
+  $('price').textContent = fmt(c.now);
+  $('price').classList.toggle('sale', !!c.was);
+  $('was').hidden = !c.was; $('was').textContent = c.was ? fmt(c.was) : '';
+  $('priceNote').textContent = c.real ? (c.was ? 'akcijska cena' : 'cena kompleta') : 'okvirna cena';
+  $('priceNote').classList.toggle('real', c.real);
+  $('saleNote').textContent = s.deal ? (plet() ? s.deal.text : 'Dodajte pletenicu i komplet je na akciji: 9.800 RSD umesto 10.800 RSD.') : '';
+  $('stickyPrice').textContent = fmt(c.now);
+  $('stickyName').textContent = 'Komplet ' + s.name + (plet() || s.pletenica==='incl' ? ' + pletenica' : '');
+}
+function renderStrip(){
+  const others = SETS.filter((s,i) => i !== state.i).slice(0,4);
+  $('strip').innerHTML = others.map(s => `<a href="?k=${s.id}" data-id="${s.id}"><img src="${s.imgs[0]}" alt="Komplet ${s.name}" loading="lazy"><span>${s.name}</span></a>`).join('');
+  $('strip').querySelectorAll('a').forEach(a => a.onclick = e => { e.preventDefault(); state.i = SETS.findIndex(s=>s.id===a.dataset.id); setUrl(a.dataset.id); renderAll(); window.scrollTo({top:0,behavior:'smooth'}); });
+}
+function renderAll(){ renderSets(); renderThumbs(); renderText(); renderContents(); renderAddons(); update(); renderStrip(); }
+
+function summary(){
+  const s = cur(), c = calc();
+  const lines = [`Zdravo! Želela bih komplet za krevetac „${s.name}".`];
+  if (s.pletenica === 'incl') lines.push('Pletenica je u kompletu.');
+  else lines.push(plet() ? 'Sa pletenicom.' : 'Bez pletenice.');
+  lines.push(lastis() ? 'Čaršav sa lastišem.' : 'Čaršav bez lastiša.');
+  lines.push(`Cena sa sajta: ${fmt(c.now)}${c.real ? '' : ' (okvirna)'}`);
+  const note = $('note').value.trim(); if (note) lines.push(`Napomena: ${note}`);
+  return lines.join('\n');
+}
+let toastT;
+function toast(html){ const t=$('toast'); t.innerHTML=html; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),2800); }
+function addToCart(){
+  state.cart += 1;
+  const b = $('cartCount'); b.textContent = state.cart; b.classList.add('bump'); setTimeout(()=>b.classList.remove('bump'),200);
+  toast(`🧸 Dodato u korpu: <b>Komplet ${cur().name}</b>`);
+}
+function sendDM(){
+  const text = summary();
+  const go = () => window.open('https://ig.me/m/maminaa_radionica_maste','_blank','noopener');
+  if (navigator.clipboard) navigator.clipboard.writeText(text).then(()=>{ toast('💌 Porudžbina je kopirana. Nalepite je u poruku.'); setTimeout(go,700); }, go);
+  else go();
+}
+
+new IntersectionObserver(([e]) => $('stickyBuy').classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0)).observe($('addBtn'));
+renderAll();
+</script>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
+</body>
+</html>
